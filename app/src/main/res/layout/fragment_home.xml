@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/home_fishing_count_iv"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:src="@drawable/img_fishing_count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/home_fishing_rate_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="55dp"
+            android:src="@drawable/img_fishing_rate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/home_fishing_count_iv"/>
+
+        <TextView
+            android:id="@+id/home_fishing_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="보이스피싱"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/home_fishing_count_iv"
+            app:layout_constraintTop_toTopOf="@id/home_fishing_count_iv" />
+
+        <TextView
+            android:id="@+id/home_fishing_count2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="감지       건"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:layout_constraintStart_toStartOf="@id/home_fishing_count_iv"
+            app:layout_constraintTop_toBottomOf="@id/home_fishing_count_tv"/>
+
+        <TextView
+            android:id="@+id/home_fishing_count_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="80dp"
+            android:text="8"
+            android:textColor="@color/yellow"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/home_fishing_count_iv"
+            app:layout_constraintTop_toTopOf="@id/home_fishing_count_iv" />
+
+        <ImageView
+            android:id="@+id/home_main_option1_iv"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/btn_main_options"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_fishing_count_iv" />
+
+        <TextView
+            android:id="@+id/home_main_call_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="90dp"
+            android:textSize="20dp"
+            android:text="통화 내용"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/home_main_option1_iv"
+            app:layout_constraintStart_toStartOf="@id/home_main_option1_iv"/>
+
+        <ImageView
+            android:id="@+id/home_main_call_content_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+
+            app:layout_constraintEnd_toStartOf="@id/home_main_call_content_tv"
+            app:layout_constraintStart_toStartOf="@id/home_main_option1_iv"
+            app:layout_constraintTop_toTopOf="@id/home_main_option1_iv"
+            app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+        <TextView
+            android:id="@+id/home_main_call_content_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="65dp"
+            android:textSize="15dp"
+            android:text="통화 내용이"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/home_main_option1_iv"
+            app:layout_constraintStart_toEndOf="@id/home_main_call_content_tv"/>
+
+        <TextView
+            android:id="@+id/home_main_call_content_detail2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53dp"
+            android:layout_marginStart="75dp"
+            android:textSize="15dp"
+            android:text="궁금해?"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/home_main_option1_iv"
+            app:layout_constraintStart_toEndOf="@id/home_main_call_content_tv"/>
+
+
+        <ImageView
+            android:id="@+id/home_main_option2_iv"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="115dp"
+            android:src="@drawable/btn_main_options"
+            app:layout_constraintTop_toBottomOf="@id/home_fishing_count_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/home_main_voice_fishing_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="90dp"
+            android:textSize="20dp"
+            android:text="보이스피싱"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/home_main_option2_iv"
+            app:layout_constraintStart_toStartOf="@id/home_main_option2_iv"/>
+
+        <ImageView
+            android:id="@+id/home_main_voice_fishing_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="30dp"
+            app:srcCompat="@android:drawable/stat_sys_speakerphone"
+            app:layout_constraintTop_toTopOf="@id/home_main_option2_iv"
+            app:layout_constraintStart_toStartOf="@id/home_main_option2_iv"
+            app:layout_constraintEnd_toStartOf="@id/home_main_voice_fishing_tv"/>
+
+
+        <TextView
+            android:id="@+id/home_main_voicefishing_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="50dp"
+            android:textSize="15dp"
+            android:text="어느 부분이?"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/home_main_option2_iv"
+            app:layout_constraintStart_toEndOf="@id/home_main_voice_fishing_tv"/>
+
+
+        <ImageView
+            android:id="@+id/home_main_option3_iv"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="215dp"
+            android:src="@drawable/btn_main_options"
+            app:layout_constraintTop_toBottomOf="@id/home_fishing_count_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/home_main_spam_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="90dp"
+            android:textSize="20dp"
+            android:text="스팸 문자"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/home_main_option3_iv"
+            app:layout_constraintStart_toStartOf="@id/home_main_option3_iv"/>
+
+        <ImageView
+            android:id="@+id/home_main_spam_text_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toStartOf="@id/home_main_spam_text_tv"
+            app:layout_constraintStart_toStartOf="@id/home_main_option3_iv"
+            app:layout_constraintTop_toTopOf="@id/home_main_option3_iv"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+
+
+        <TextView
+            android:id="@+id/home_main_spam_text_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="73dp"
+            android:textSize="15dp"
+            android:text="스팸 문자"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/home_main_option3_iv"
+            app:layout_constraintStart_toEndOf="@id/home_main_spam_text_tv"/>
+
+        <TextView
+            android:id="@+id/home_main_spam_text_detail2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53dp"
+            android:layout_marginStart="55dp"
+            android:textSize="15dp"
+            android:text="다시는 보지 말자"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/home_main_option3_iv"
+            app:layout_constraintStart_toEndOf="@id/home_main_spam_text_tv"/>
+
+        <ImageView
+            android:id="@+id/home_main_search_bar_iv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/btn_main_home_search_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
